@@ -1,0 +1,38 @@
+diff -r 8734742c08c0 c/Makefile
+--- a/c/Makefile	Tue Oct 16 12:46:29 2018 -0400
++++ b/c/Makefile	Fri Oct 26 22:18:18 2018 +0000
+@@ -1,6 +1,7 @@
+ EXE_DIR=../bin
+ SCRIPTS_DIR=../scripts
+-TRAJECTORYMANAGEMENT_DIR=$(HOME)/Research/Code/trajectorymanagementandanalysis/trunk/src/TrajectoryManagementAndAnalysis
++#TRAJECTORYMANAGEMENT_DIR=$(HOME)/Research/Code/trajectorymanagementandanalysis/trunk/src/TrajectoryManagementAndAnalysis
++TRAJECTORYMANAGEMENT_DIR=/home/vagrant/dev/trajectorymanagementandanalysis/trunk/src/TrajectoryManagementAndAnalysis
+ 
+ CXX = g++
+ 
+diff -r 8734742c08c0 run-tests.sh
+--- a/run-tests.sh	Tue Oct 16 12:46:29 2018 -0400
++++ b/run-tests.sh	Fri Oct 26 22:18:18 2018 +0000
+@@ -1,17 +1,6 @@
+ #!/bin/sh
+-echo "------------"
+-echo "Python tests"
+-cd trafficintelligence
+-./run-tests.sh
+-cd ..
+-echo "------------"
+-echo "C++ tests"
+-if [ -f ./bin/tests ]
+-then
+-    ./bin/tests
+-else
+-    echo "The test executable has not been compiled"
+-fi
+-echo "------------"
+-echo "Script tests"
+-./scripts/run-tests.sh
++# for file in tests/*... basename
++for f in ./*.py
++do
++    python3 $f
++done
