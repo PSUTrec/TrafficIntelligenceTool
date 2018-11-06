@@ -1,5 +1,5 @@
 # Traffic Intelligence Tools
-Turn key solution of compilation and deployment of [Traffic Intelligence Tools](https://bitbucket.org/Nicolas/trafficintelligence/wiki/Home) with opencv 3.4.3 on Windows platform.
+Turn key solution for compilation and deployment of [Traffic Intelligence Tools](https://bitbucket.org/Nicolas/trafficintelligence/wiki/Home) with opencv 3.4.3 on Windows platform.
 
 ## Install required programs
 After clone the project, you need to run the [install script](https://github.com/PSUTrec/TrafficIntelligenceTool/blame/master/scripts/installti.bat) as Administrator. 
