@@ -67,5 +67,5 @@ display-trajectories.py --cfg tracking.cfg -i laurier.avi -d laurier.sqlite -o h
 ## Jupyter notebook sample
 [A jupyter notebook](https://github.com/PSUTrec/TrafficIntelligenceTool/blob/master/etc/jupyter/ti_sample.ipynb) is at the jupyter shared directory. Launch your browser and access the sample at 
 ```
-http//cvti.example.com:8888
+http://cvti.example.com:8888
 ```
