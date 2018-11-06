@@ -69,3 +69,4 @@ display-trajectories.py --cfg tracking.cfg -i laurier.avi -d laurier.sqlite -o h
 ```
 http://cvti.example.com:8888
 ```
+## [Traffic Intelligence Tool documation](https://bitbucket.org/Nicolas/trafficintelligence/wiki/Home)
